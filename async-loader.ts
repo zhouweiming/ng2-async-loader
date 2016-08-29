@@ -16,7 +16,7 @@ function checkNotEmpty(value: any, modulePath: string, exportName: string): any 
 @Injectable()
 export class AsyncNgModuleLoader implements NgModuleFactoryLoader {
 
-  constructor(private compiler: Compiler) {}
+  constructor(private compiler: Compiler) { }
 
   load(modulePath: string | Function): Promise<NgModuleFactory<any>> {
     if (typeof modulePath === 'function') {
