@@ -16,9 +16,9 @@ import { asyncWrap } from "async-loader";
 
 let routes: Routes = [
   {
-    path: "app",
+    path: "demo",
     loadChildren: asyncWrap(() => {
-      return require("../app/app.module");
+      return require("../demo/demo.module");
     })
   }
 ]
